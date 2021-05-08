@@ -1,8 +1,13 @@
 <template>
   <main v-if="!loading">
     <DataTitle :text="title" :dataDate="dataDate" />
-    <DataBoxes :stats="status" />
-    <CountrySelect :countries="countries" />
+    <DataBoxes :stats="stats" />
+    <CountrySelect @get-country="getCountryData" :countries="countries" />
+    <button @click="clearCountryData"
+      v-if="stats.Country"
+      class="bg-green-700 text-white rounded p-3 mt-10 focus:outline-none hover:bg-green-600">
+        Clear Country
+    </button>
    
   </main>
   <main v-else class="flex flex-col align-center justify-center text-center">
@@ -36,7 +41,7 @@ export default {
      loading : true,
      title : 'Global',
      dataDate : '',
-     status : {},
+     stats : {},
      countries : [],
      loadingImage :require('../assets/hourglass.gif'),
      };
@@ -46,9 +51,23 @@ export default {
    methods:{
       async fetchCovidData() { 
       const res = await fetch('https://api.covid19api.com/summary');
-      return await res.json();
+      const data= await res.json();
+      return data
       },
+       //country-data initializer from emit
+    getCountryData(country){
+       this.stats=country
+       this.title=country.Country
    },
+   async clearCountryData () {
+      this.loading = true;
+      const data = await this.fetchCovidData();
+      this.title = 'Global';
+      this.status = data.Global;
+      this.loading = false;
+    }
+   },
+  
    // lifecycle method 
    async created(){
      const data = await this.fetchCovidData()
@@ -56,7 +75,7 @@ export default {
      
      this.loading = false;
      this.dataDate = data.Date;
-     this.status = data.Global;
+     this.stats = data.Global;
      this.countries = data.Countries;
    }
       /** const fetchCovidData = async () => {

@@ -18,13 +18,13 @@ export default {
   data(){
     return {
      selected:0
-  };
+  }
   } ,
   methods :{
    onChange (){
-     const country = countries.find((item) => item.ID === this.selected);
-        console.log(country)
-        emit('get-country', country);
+     const country = this.countries.find((item) => item.ID === this.selected);
+       // console.log(country)
+        this.$emit('get-country', country);
 
   }
 }
