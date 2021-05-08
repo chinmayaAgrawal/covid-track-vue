@@ -14,10 +14,11 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
+<!-- bottom:0 because it will fix whole thing at one point not respo -->
+
 <style scoped>
 .copy-right{
     position:absolute;
-    bottom:0;
     text-align: center;
     padding: 1rem;
     background: darken(rgb(54, 44, 44), 10);

@@ -2,6 +2,7 @@
   <main v-if="!loading">
     <DataTitle :text="title" :dataDate="dataDate" />
     <DataBoxes :stats="status" />
+    <CountrySelect :countries="countries" />
    
   </main>
   <main v-else class="flex flex-col align-center justify-center text-center">

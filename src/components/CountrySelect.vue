@@ -1,9 +1,8 @@
 <template>
-  <select
-    v-model="selected"
-    class="form-select mt-10 block w-full border p-3 rounded"
-    @change="onChange()"
-  >
+<!-- this an input field so we will need to bind it with the data using v-model -->
+  <select  @change="onChange()" v-model="selected"
+   class="form-select mt-10 block w-full border p-3 rounded"
+   >
     <option value="0">Select Country</option>
     <option v-for="country in countries" :value="country.ID">
       {{ country.Country }}
@@ -16,15 +15,19 @@ import { ref } from 'vue';
 export default {
   name: 'CountrySelect',
   props: ['countries'],
-  setup ({ countries }, { emit }) {
-    const selected = ref(0);
+  data(){
     return {
-      selected,
-      onChange () {
-        const country = countries.find((item) => item.ID === selected.value);
+     selected:0
+  };
+  } ,
+  methods :{
+   onChange (){
+     const country = countries.find((item) => item.ID === this.selected);
+        console.log(country)
         emit('get-country', country);
-      }
-    };
+
   }
+}
+
 };
 </script>
