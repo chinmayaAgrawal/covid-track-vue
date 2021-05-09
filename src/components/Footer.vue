@@ -20,10 +20,10 @@ export default {
 .copy-right{
     position:absolute;
     text-align: center;
-    padding: 1rem;
+    padding: 0.1rem;
     background: darken(rgb(54, 44, 44), 10);
     color: rgba(255, 246, 246, 0.87);
-    height: 60px;
+    height: 40px;
     width:100%;
 }
 h3 {
