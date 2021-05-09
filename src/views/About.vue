@@ -64,7 +64,7 @@
 
           <!--<hr style="color: lightcoral;height:2px">-->
 
-          <h4> TOP EXPERTISE</h4>
+          <h4> PARTICULARS</h4>
 
           <p></p>
           <div id="skills">
@@ -87,12 +87,33 @@
      </div>
     </div>
   </section>
+  <section class="s1">
+    <div class="main-container">
+      <!--PORT-FOLIO-->
+       <div class="post-wrapper">
+         
+           <!-- <a href="#!">
+              <i class="fab fa-twitter fa-3x" ></i>
+            </a>-->
+            <a id="mail" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSBmXMJRTWXwmdhzPSchLBzzbhpRgfwfNMFpGmvVcnQNbrHBsXmhksWqdXXfBsFZRSPzCPML">
+              <i class="fas fa-envelope fa-3x" ></i>
+            </a>
+            <a id="lin" href="https://www.linkedin.com/in/chinmaya-agrawal" target="_blank">
+              <i class="fab fa-linkedin fa-3x" ></i>
+            </a>
+            <a id="git" href="https://github.com/chinmayaAgrawal/covid-track-vue" target ="_blank">
+              <i class="fab fa-github fa-3x"></i>
+            </a>
+          
+    </div>
+    </div>
+  </section>
   <!--
   <section class="s1">
     <div class="main-container">-->
       <!--PORT-FOLIO--><!--
       <h3>Some of my past projects</h3>
-      <div class="post-wrapper">-->
+      <div class="">-->
         <!-- in case there is a overflow just add div to each post to normalise it--><!--
         <div class="post">
           <img class ="thumbnail" src="images/Screenshot (637).png">
@@ -127,18 +148,21 @@
     <div class="main-container">
       <!--CONTACT-->
       <h3 style="text-align:center;">Get In Touch</h3>
-      <form id="contact-form">
+      <form id="contact-form"
+       action="https://formspree.io/f/xnqljepn"
+       method="POST" target="_blank"
+       >
         <label>NAME</label>
-        <input class="input-field" type="text" name="name">
+        <input class="input-field" type="text" name="name" placeholder="Type your name" >
 
         <label>SUBJECT</label>
-        <input class="input-field" type="text" name="subject">
+        <input class="input-field" type="text" name="subject" placeholder= "How can we help?">
 
         <label>E-MAIL</label>
-        <input class="input-field" type="text" name="email">
+        <input class="input-field" type="text" name="email" placeholder= "your@email.com">
 
         <label>YOUR-MESSAGE</label>
-        <textarea class="input-field" name="message"></textarea>
+        <textarea class="input-field" name="message" placeholder= "What's on your mind?"></textarea>
 
         <input id="submit-btn" type="submit" value="send">
       </form>

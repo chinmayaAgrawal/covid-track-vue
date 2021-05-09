@@ -70,21 +70,45 @@ h2{ font-size: 36px;}
 h3{ font-size: 28px;}
 h4{ font-size: 24px;}
 h5{ font-size: 20px;}
-h6{ font-size: 16px;}
+.post-wrapper {
+        margin-top: 3rem;
+}
+ post-wrapper.a {
+          padding: 10rem;
+          margin-left:3rem;
+          margin-right:3rem;
+        }
+    
+      #mail:hover {
+            color: #88760f;
+          }
+          #lin:hover {
+            color: #88760f;
+          }
+          #git:hover {
+            color: #88760f;
+          }
+
 
 #app {
   font-family: 'Russo One', sans-serif;
- 
   color: #212427;
 }
 
 #nav a {
   font-weight: bold;
   color: #212427;
+
+}
+#nav a:hover{
+  color:#7e4c74;
 }
 
 #nav a.router-link-exact-active {
   color: #42b983;
+}
+#nav a.router-link-exact-active:hover{
+  color:#7e4c74;
 }
 .s1{
   background-color:var(--mainColor);
@@ -353,7 +377,7 @@ padding-bottom: 50px;/** so to take the bottom edge of preview bit up*/
 #contact-form label{
   line-height: 3em;
 }
-contact-form textarea{
+#contact-form textarea{
   min-height: 100px;
   font-size: 14px;
 }
@@ -386,7 +410,6 @@ contact-form textarea{
     /**for overflow correction**/
     grid-template-areas:
      'nav-wrapper'
-     'left-column'
      'right-column'
      ;
 }

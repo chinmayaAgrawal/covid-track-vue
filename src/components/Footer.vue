@@ -16,28 +16,15 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <!-- bottom:0 because it will fix whole thing at one point not respo -->
 
-<style scoped>
+<style >
 .copy-right{
     position:absolute;
     text-align: center;
     padding: 0.1rem;
     background: darken(rgb(54, 44, 44), 10);
     color: rgba(255, 246, 246, 0.87);
-    height: 40px;
+    height: 60px;
     width:100%;
 }
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+
 </style>
