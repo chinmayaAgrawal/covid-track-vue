@@ -63,7 +63,7 @@ export default {
       this.loading = true;
       const data = await this.fetchCovidData();
       this.title = 'Global';
-      this.status = data.Global;
+      this.stats = data.Global;
       this.loading = false;
     }
    },
@@ -73,10 +73,11 @@ export default {
      const data = await this.fetchCovidData()
      //console.log(data)
      
-     this.loading = false;
+     
      this.dataDate = data.Date;
      this.stats = data.Global;
      this.countries = data.Countries;
+     this.loading = false;
    }
       /** const fetchCovidData = async () => {
       const res = await fetch('https://api.covid19api.com/summary');
