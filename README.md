@@ -1,5 +1,7 @@
 # covid-tracker-vue
 
+![Screenshot (354)](https://user-images.githubusercontent.com/54171759/117698018-d2a8ca80-b1e0-11eb-8576-836294a79d6a.png)
+
 ## Project setup
 ```
 npm install
