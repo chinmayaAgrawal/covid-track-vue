@@ -21,8 +21,8 @@ export default {
 
 
 :root{
-  --mainColor:#eaeaea;
-  --secondaryColor:#fff;
+  --mainColor:#eaeaea96;
+  --secondaryColor:rgb(236, 226, 226);
 
   --borderColor:#c1c1c1;
 
@@ -32,9 +32,11 @@ export default {
   --themeDotBorder:#24292a;
 
   --previewBg:#rgb(251,249,243,0.8);
-  --previewShadow:#f0ead6;
+  --previewShadow:#f0d98f;
 
-  --buttonColor:black;
+  --buttonColor:#333;
+  --primary-color: #444;
+  --secondary-color: #eece1a;
 
 }
 html, body{
@@ -73,22 +75,26 @@ h5{ font-size: 20px;}
 .post-wrapper {
         margin-top: 3rem;
 }
- post-wrapper.a {
+ .post-wrapper.a {
           padding: 10rem;
-          margin-left:3rem;
-          margin-right:3rem;
+          
         }
     
-      #mail:hover {
-            color: #88760f;
+         .mail:hover {
+            color: var(--secondary-color);
           }
-          #lin:hover {
-            color: #88760f;
+          .lin:hover {
+            color: var(--secondary-color);
           }
-          #git:hover {
-            color: #88760f;
+          .git:hover {
+            color: var(--secondary-color);
           }
-
+           .web:hover {
+            color: var(--secondary-color);
+          }
+          /*#text{
+            color:var(--secondary-color);
+          }*/
 
 #app {
   font-family: 'Russo One', sans-serif;
@@ -335,7 +341,7 @@ padding:10px;
 }
 .post-wrapper{
 display: grid;
-grid-template-columns: repeat(auto-fit,320px);
+grid-template-columns: repeat(auto-fit,100px);
 gap:20px;
 justify-content: center;
 padding-bottom: 50px;/** so to take the bottom edge of preview bit up*/
@@ -398,6 +404,10 @@ padding-bottom: 50px;/** so to take the bottom edge of preview bit up*/
   background-color: var(--buttonColor);
   border:none;
 }
+#submit-btn:hover{
+  background: var(--secondary-color);
+  text-decoration-color: var(--secondary-color);
+}
 
 @media screen and (max-width:1200px){
   .main-container{
@@ -413,22 +423,64 @@ padding-bottom: 50px;/** so to take the bottom edge of preview bit up*/
      'right-column'
      ;
 }
-  .right-column:{
+
+  .right-column{
     justify-content: center;
-      }
+    max-width: 400px;
+		height: 250px;
+		padding-left: 10px;
+		padding-top: 10px;
+	}
+  .post-wrapper{
+    grid-template-rows: 1fr;
+    grid-template-areas: 'mail' 'lin' 'git' 'web';;
+  }
 }
 @media screen and (max-width: 400px){
 	#preview-shadow{
-		max-width: 280px;
+		max-width: 240px;
 		height: 180px;
 		padding-left: 10px;
 		padding-top: 10px;
 	}
 
 	#preview{
-		width: 280px;
-
+		width: 240px;
 	}
+  .right-column{
+    justify-content: center;
+    max-width: 200px;
+		height: 150px;
+		padding-left: 10px;
+		padding-top: 10px;
+	}
+  .post-wrapper{
+    grid-template-rows: 1fr;
+    grid-template-areas: 'mail' 'lin' 'git' 'web';
+  }
 }
+
+/**  Button Styles */
+.btn-dark {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin-bottom: 0.3rem;
+  color:var(--secondary-color);
+  background: var(--buttonColor);
+ /* color:  #333;*/
+ 
+}
+ .btn-dark:hover {
+    background: var(--secondary-color);
+    color:var(--buttonColor);
+  }
+
+#t1{
+  color:var(--secondary-color);
+}
+
+  /**media query to be at end so that it runs at last**/
+  /**@import 'mobile';**/
 
 </style>

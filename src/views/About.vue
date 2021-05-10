@@ -1,10 +1,9 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>Hello ,This is an about page</h1>
     <section class="s1">
     <div class="main-container">
       <div class="greeting-wrapper">
-       <h1>Hello, </h1>
       </div>
       <div class=" intro-wrapper">
         <div class="nav-wrapper">
@@ -16,7 +15,7 @@
             <!--nav-->
           </div>
           <ul id="navigation">
-            <li> <a href ="#">contact</a></li>
+            <li> <a href ="http://www.developedbychinmaya.me/wDemonstration" target="_blank">contact</a></li>
       <!--  <li> <a href ="#" >contact</a></li> -->
           </ul>
         </div>
@@ -69,11 +68,11 @@
           <p></p>
           <div id="skills">
             <ul>
-              <li><i><b>API</b></i> :<a href="www.covid19api.com">www.covid19api.com</a></li>
-              <li>JavaScript</li>
-              <li>Python</li>
-              <li>Node.JS</li>
-              <li>Express.JS</li>
+              <li><i><b>API</b></i> :<a href="https://www.covid19api.com">www.covid19api.com</a></li>
+              <li><i><b>Language</b></i>: javascript </li>
+              <li><i><b>Library</b></i>: vue.js</li>
+              <li><i><b>Dependencies</b>:</i>Moments</li>
+              <li><i><b>Package Manager</b></i>: NPM </li>
            </ul>
          </div>
       </div>
@@ -90,60 +89,32 @@
   <section class="s1">
     <div class="main-container">
       <!--PORT-FOLIO-->
-       <div class="post-wrapper">
+       <div class="post-wrapper"><a id="text">CONNECT US HERE</a>
          
            <!-- <a href="#!">
               <i class="fab fa-twitter fa-3x" ></i>
             </a>-->
-            <a id="mail" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSBmXMJRTWXwmdhzPSchLBzzbhpRgfwfNMFpGmvVcnQNbrHBsXmhksWqdXXfBsFZRSPzCPML">
+            <a class="mail" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=GTvVlcSBmXMJRTWXwmdhzPSchLBzzbhpRgfwfNMFpGmvVcnQNbrHBsXmhksWqdXXfBsFZRSPzCPML">
               <i class="fas fa-envelope fa-3x" ></i>
             </a>
-            <a id="lin" href="https://www.linkedin.com/in/chinmaya-agrawal" target="_blank">
+            <a class="lin" href="https://www.linkedin.com/in/chinmaya-agrawal" target="_blank">
               <i class="fab fa-linkedin fa-3x" ></i>
             </a>
-            <a id="git" href="https://github.com/chinmayaAgrawal/covid-track-vue" target ="_blank">
+            <a class="git" href="https://github.com/chinmayaAgrawal" target ="_blank">
               <i class="fab fa-github fa-3x"></i>
+            </a>
+            <a class="web" href="http://www.developedbychinmaya.me/wDemonstration" target ="_blank">
+              <i class="fas fa-globe fa-3x"></i>
             </a>
           
     </div>
     </div>
-  </section>
-  <!--
-  <section class="s1">
-    <div class="main-container">-->
-      <!--PORT-FOLIO--><!--
-      <h3>Some of my past projects</h3>
-      <div class="">-->
-        <!-- in case there is a overflow just add div to each post to normalise it--><!--
-        <div class="post">
-          <img class ="thumbnail" src="images/Screenshot (637).png">
-          <div class="post-preview">
-            <h6 class="post-title" >AUTHENTICATION SYSTEM</h6>
-            <p class="post-intro">Authentication system using passport
-            By-Crypt.JS with node</p>
-            <a href="p1.html">Read More</a>
-          </div>
-        </div>
-        <div class="post">
-          <img class ="thumbnail" src="images/Screenshot (82).png">
-          <div class="post-preview">
-            <h6 class="post-title" >BREAKING BAD DOC.</h6>
-            <p class="post-intro"> A documentaion app using react</p>
-            <a href="#">Read More</a>
-          </div>
-        </div>
-        <div class="post">
-          <img class ="thumbnail" src="">
-          <div class="post-preview">
-            <h6 class="post-title" >LAB ASSISTANT</h6>
-            <p class="post-intro">A real time lab database with results and response using react</p>
-            <a href="#">Read More</a>
-          </div>
-        </div>
-
-      </div>
+    <div class = "item">
+      <a href="https://github.com/chinmayaAgrawal/covid-track-vue" target="_blank" class="btn-dark">
+        <i class="fab fa-github"></i> <a id="text">FIND CODE HERE</a>
+      </a>
     </div>
-  </section>-->
+  </section>
   <section class="s2">
     <div class="main-container">
       <!--CONTACT-->
@@ -153,7 +124,7 @@
        method="POST" target="_blank"
        >
         <label>NAME</label>
-        <input class="input-field" type="text" name="name" placeholder="Type your name" >
+        <input class="input-field" type="text" name="name" placeholder="Your name" >
 
         <label>SUBJECT</label>
         <input class="input-field" type="text" name="subject" placeholder= "How can we help?">

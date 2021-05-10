@@ -1,7 +1,8 @@
 <template>
   <footer class="copy-right text-center bg-black text-white p-4 mt-10" >
-    <div class="text-1xl md:text-1.5xl font-bold mt-3">
-          Copyright &copy; 2021
+    <div id="t1" class="text-1xl md:text-1.5xl font-bold mt-3">
+         <!-- Copyright &copy; 2021-->
+         Developed with <i id= "t1" class="fab fa-js-square"></i>  <i id ="t1" class="fab fa-vuejs"></i>
     </div>
   </footer>
 </template>
